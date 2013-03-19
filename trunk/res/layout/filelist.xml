@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#0096ff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="裤兜列表"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/fileRefreshView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:padding="6dp"
+                android:src="@drawable/ic_file_refresh" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/fileListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:divider="#eeeeee"
+            android:dividerHeight="1dp" >
+        </ListView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/scanInfoView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#eeeeee"
+        android:maxLines="1"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+		android:paddingLeft="8dp"
+        android:text="裤兜列表"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
